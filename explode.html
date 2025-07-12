@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloth Phishing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center text-center flex-col gap-4">
+<h1 class="text-6xl">Oh no! Your robot is going to explode if you don't click this button in</h1>
+<span class="text-4xl" id="seconds">5 seconds</span>
+<a href="https://github.com/dairy-foundation/Sloth" class="p-4 text-2xl bg-surface-0 rounded-md shadow-sm">Download Sloth</a>
+<script>
+    let time = 4;
+    setInterval(() => {
+      document.getElementById("seconds").innerHTML = `${time} seconds`;
+        time--;
+    }, 1000)
+</script>
+</body>
+</html>

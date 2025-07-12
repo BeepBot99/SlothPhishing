@@ -1,0 +1,15 @@
+{
+  "name": "sloth-phishing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i app.css -o style.css --watch",
+    "build": "npx @tailwindcss/cli -i app.css -o style.css --minify"
+  },
+  "author": "BeepBot99",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
